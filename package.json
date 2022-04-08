@@ -12,6 +12,7 @@
     "@maptalks/vt": "^0.64.0",
     "axios": "^0.26.1",
     "maptalks": "^1.0.0-rc.4",
+    "nprogress": "^0.2.0",
     "pinia": "^2.0.13",
     "sass": "^1.50.0",
     "unplugin-vue-components": "^0.18.5",
@@ -21,6 +22,7 @@
   },
   "devDependencies": {
     "@types/node": "^17.0.23",
+    "@types/nprogress": "^0.2.0",
     "@typescript-eslint/eslint-plugin": "^5.18.0",
     "@typescript-eslint/parser": "^5.18.0",
     "@vitejs/plugin-vue": "^2.2.0",
