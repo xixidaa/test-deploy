@@ -8,11 +8,24 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.2.25"
+    "@maptalks/gl": "^0.68.1",
+    "@maptalks/vt": "^0.64.0",
+    "axios": "^0.26.1",
+    "maptalks": "^1.0.0-rc.4",
+    "pinia": "^2.0.13",
+    "sass": "^1.50.0",
+    "unplugin-vue-components": "^0.18.5",
+    "vue": "^3.2.31",
+    "vue-global-api": "^0.4.1",
+    "vue-router": "^4.0.14"
   },
   "devDependencies": {
     "@types/node": "^17.0.23",
+    "@typescript-eslint/eslint-plugin": "^5.18.0",
+    "@typescript-eslint/parser": "^5.18.0",
     "@vitejs/plugin-vue": "^2.2.0",
+    "eslint": "^8.12.0",
+    "eslint-plugin-vue": "^8.6.0",
     "typescript": "^4.5.4",
     "vite": "^2.8.0",
     "vue-tsc": "^0.29.8"

@@ -12,6 +12,7 @@
     "allowSyntheticDefaultImports": true,
     "lib": ["esnext", "dom"]
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"], // 指定需要编译的文件范围
+  "exclude": ["node_modules","dist"], // 排除文件
+  "references": [{ "path": "./tsconfig.node.json" }] // ts3新特性,允许将ts拆分结构化,类似于vue组件化思想
 }

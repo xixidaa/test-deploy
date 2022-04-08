@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "skipLibCheck": true, // 跳过三方库的类型检查
     "composite": true,
     "module": "esnext",
     "moduleResolution": "node",
