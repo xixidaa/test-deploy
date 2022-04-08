@@ -67,7 +67,7 @@ code {
   color: #304455;
 }
 .hello {
-  background-color: rgb(208, 211, 58);
+  background-color: rgb(226, 228, 146);
   height: calc(100vh - 80px);
 }
 </style>

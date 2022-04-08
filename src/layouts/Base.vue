@@ -26,11 +26,11 @@
 .top-area {
   width: 100%;
   height: 40px;
-  background-color: rgb(160, 31, 31);
+  background-color: rgb(235, 109, 109);
 }
 .foot-area {
   width: 100%;
   height: 40px;
-  background-color: rgb(31, 76, 160);
+  background-color: rgb(97, 143, 230);
 }
 </style>
