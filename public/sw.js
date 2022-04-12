@@ -1,8 +1,6 @@
 const CACHE_NAME = 'my-first-sw'
 const urlsToCache = [
-    '/',
-    '/styles/main.css',
-    '/script/main.js'
+
 ]
 self.addEventListener('install',function(event){
     // 在install阶段可以预缓存些资源
