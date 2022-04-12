@@ -10,7 +10,7 @@ request.interceptors.request.use((config: AxiosRequestConfig) => {
 })
 
 request.interceptors.response.use((res: AxiosResponse) => {
-    console.log(res)
+    return res
 }, (error: any) => {
     return Promise.reject(error)
 })

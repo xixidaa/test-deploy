@@ -18,9 +18,9 @@
 
 <script setup lang="ts">
     import { useRouter } from 'vue-router'
-    import axios from 'axios'
     import { mainStore } from '../store/index'
-    axios.get('/api/json').then(res => {
+    import request from '../utils/http'
+    request.get('/api/json').then(res => {
         console.log(res)
     })
     const router  = useRouter()
