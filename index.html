@@ -27,7 +27,7 @@
             }
           })
         } else {
-          navigator.serviceWorker.register('/sw.js',{
+          navigator.serviceWorker.register('./public/sw.js',{
             scope: '/'
           }).then((registraion) => {
             console.log('注册成功')
