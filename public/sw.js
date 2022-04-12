@@ -14,7 +14,6 @@ self.addEventListener('install',function(event){
 })
 
 self.addEventListener('fetch',(event) => {
-    console.log(event,'fetch_event')
     event.respondWith(
         // 如果匹配到缓存直接返回
         caches.match(event.request).then(res => {
