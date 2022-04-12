@@ -19,22 +19,29 @@
 
       if('serviceWorker' in navigator) {
         console.log('支持sw')
-        if(location.protocol === 'http:') {
-          // 本地环境卸载sw
-          navigator.serviceWorker.getRegistrations().then((registraions) => {
-            for(let registraion of registraions) {
-              registraion.unregister()
-            }
-          })
-        } else {
-          navigator.serviceWorker.register('./public/sw.js',{
+        navigator.serviceWorker.register('./src/utils/sw.js',{
             scope: '/'
           }).then((registraion) => {
             console.log('注册成功')
           }).catch(err => {
             console.log(err,'注册失败')
           })
-        }
+        // if(location.protocol === 'http:') {
+        //   // 本地环境卸载sw
+        //   navigator.serviceWorker.getRegistrations().then((registraions) => {
+        //     for(let registraion of registraions) {
+        //       registraion.unregister()
+        //     }
+        //   })
+        // } else {
+        //   navigator.serviceWorker.register('./src/utils/sw.js',{
+        //     scope: '/'
+        //   }).then((registraion) => {
+        //     console.log('注册成功')
+        //   }).catch(err => {
+        //     console.log(err,'注册失败')
+        //   })
+        // }
       }else {
         console.log('不支持sw')
       }
