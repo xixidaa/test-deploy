@@ -40,6 +40,13 @@ export default defineConfig({
     port: 4000,
     cors: true,
     open: true,
+    proxy: {
+      '/api': {
+        target: 'https://test-serverless-red.vercel.app/api',
+        changeOrigin: true,
+        rewrite: path => path.replace(/^\/api/, '')
+      }
+    },
   },
   build: {
     outDir: 'dist',

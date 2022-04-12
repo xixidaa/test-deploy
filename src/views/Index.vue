@@ -8,6 +8,7 @@
                 <br>
                 地图可视化平台
            </div>
+           <div>{{ store.helloWorld }}</div>
            <div class="go-home" @click="goHomePage">
                 点击进入
            </div>
@@ -17,10 +18,17 @@
 
 <script setup lang="ts">
     import { useRouter } from 'vue-router'
+    import axios from 'axios'
+    import { mainStore } from '../store/index'
+    axios.get('/api/json').then(res => {
+        console.log(res)
+    })
     const router  = useRouter()
     const goHomePage = () => {
         router.push('/home')
     }
+
+    const store = mainStore()
 </script>
 
 <style scoped lang="scss">
