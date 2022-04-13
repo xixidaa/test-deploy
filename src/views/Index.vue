@@ -36,17 +36,23 @@
     width: 100%;
     height: 100%;
     display: flex;
-
+    align-items: center;
+    background: url('../assets/imgs/home_bg.jpeg') no-repeat center / cover;
     .welcome-container {
         flex: 3;
         height: 100%;
-        background: url('../assets/imgs/home_bg.jpeg') no-repeat center / cover;
+        // background: url('../assets/imgs/home_bg.jpeg') no-repeat center / cover;
     }
     .welcome-right {
         flex: 1;
         text-align: center;
         height: 100%;
-        background-color: rgba(14, 20, 36, 0.831);
+        box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+        border-radius: 20px;
+        background: linear-gradient(to right bottom,rgba(0,0,0,.6),rgba(0,0,0,.2));
+        backdrop-filter: blur(8px);
+        border-top: 1px solid rbga(255,255,255,0.8);
+        border-left: 1px solid rbga(255,255,255,0.8);
         .welcome-title {
             font-family: 'DouyuFont';
             color: rgb(120, 91, 52);
