@@ -37,7 +37,7 @@
     height: 100%;
     display: flex;
     align-items: center;
-    background: url('../assets/imgs/home_bg.jpeg') no-repeat center / cover;
+    background: url('../assets/imgs/home_bg.webp') no-repeat center / cover;
     .welcome-container {
         flex: 3;
         height: 100%;
